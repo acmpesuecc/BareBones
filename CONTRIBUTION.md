@@ -2,7 +2,7 @@
 Welcome! Thank you for showing interest in this repo! These are some rules that you must follow to contribute to this repo:
 
 ## Contributing Rules
-1. Make sure you have setup the correct version of the IDE that is to be used. Follow the instructions.md in the repo.
+1. Make sure you have setup the correct version of the EDA tool that is to be used. Follow the instructions.md in the repo.
 2. Note that there are different directories for different languages, so check twice before PR.
 3. Comments and formatting are important, remember to use all begin and end statements and use tabs for indentation.
 
