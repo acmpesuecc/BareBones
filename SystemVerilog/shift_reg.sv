@@ -25,9 +25,8 @@ endmodule
 
 module main;
 reg clk, rst, en, d, dir;
-wire [7:0] q;
-	ddir ddir1(d, dir, en, clk, reset, out);
-
+	wire [7:0] out;
+	shift_reg shift_reg1(d, clk, en, dir, rst, out);
 initial begin
 forever begin
 clk <= 0;
@@ -53,8 +52,10 @@ d = 1;
 dir = 0;
 #50
 d = 0;
-#12
 dir = 1;
+#12
+d = 1;
+dir = 0;
 end
 
 initial begin
