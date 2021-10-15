@@ -22,3 +22,49 @@ module shift_reg (d, clk, en, dir, rst, out);
 		end
 	end
 endmodule
+
+module main;
+reg clk, rst, en, d, dir;
+wire [7:0] q;
+	ddir ddir1(d, dir, en, clk, reset, out);
+
+initial begin
+forever begin
+clk <= 0;
+#5
+clk <= 1;
+#5
+clk <= 0;
+end
+end
+
+initial begin
+rst = 1;
+#12
+rst = 0;
+#90
+rst = 1;
+#12
+rst = 0;
+end
+
+initial begin
+d = 1;
+dir = 0;
+#50
+d = 0;
+#12
+dir = 1;
+end
+
+initial begin
+forever begin
+en = 0;
+#7
+en = 1;
+#8
+en = 0;
+end
+end
+
+endmodule
