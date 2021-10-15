@@ -5,6 +5,10 @@ BareBones is a repo to get started with HDL coding. This repo consists of simple
 ### Langauges
 - SystemVerilog 
 
+### Things to note
+- Follow the installation and environment setup properly. If you face any issues, contact the maintainers. 
+- Read the instructions.md file thoroughly.
+
 ### Rules to contribute
 Check out these [Contributing Guidelines](https://github.com/suhaskv1/BareBones/blob/main/CONTRIBUTION.md) to learn more!
 
