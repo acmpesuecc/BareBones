@@ -12,3 +12,5 @@ and(p,a,b,~c);
 or(y,l,~m,n,o,p);
 
 endmodule
+
+
