@@ -106,6 +106,7 @@ module struc_circuit_tb;
 				d = 1;
             #10; 
 						
-
+	end
            
 endmodule
+		
