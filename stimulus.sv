@@ -17,7 +17,6 @@ module stimulus;
  integer i, j;
  initial 
  begin
- 
  clk = 0;
  for(i =0; i<=40; i=i+1)
  begin
@@ -44,7 +43,7 @@ end
 #20 s_in =1;
 #20 s_in = 1;
 #20 s_in =0;
- end  
+end  
  
 		initial begin
 		 $monitor("clk=%d s_in=%d,s_out=%d",clk,s_in, s_out);
