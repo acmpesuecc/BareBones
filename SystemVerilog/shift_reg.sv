@@ -30,30 +30,30 @@ reg clk, rst, en, d, dir;
 initial begin
 forever begin
 clk <= 0;
-#5
+#3
 clk <= 1;
-#5
+#3
 clk <= 0;
 end
 end
 
 initial begin
 rst = 1;
-#12
+#3
 rst = 0;
-#90
+#3
 rst = 1;
-#12
+#3
 rst = 0;
 end
 
 initial begin
 d = 1;
 dir = 0;
-#50
+#3
 d = 0;
 dir = 1;
-#12
+#3
 d = 1;
 dir = 0;
 end
@@ -61,9 +61,9 @@ end
 initial begin
 forever begin
 en = 0;
-#7
+#3
 en = 1;
-#8
+#3
 en = 0;
 end
 end
